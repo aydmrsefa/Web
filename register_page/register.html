@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <img src='@' alt='descriptive text'>
+<head>
+    <link rel="stylesheet" href="@">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kayıt Ol</title>
+
+
+    <link href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/67239/animate.min.css" rel="stylesheet" />
+    <link href="@" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+
+    <div class="body"></div>
+
+
+    <div class="overlay">
+        <div class="ui-panel login-panel animated bounceInDown">
+            <header>
+                <div class="left logo">
+                    <a href=""><span>Admin</span>Kayıt</a>
+                </div>
+                <div class="right">
+                    <a href="#close" id="close" class="ui-button close">
+
+                    </a>
+                </div>
+            </header>
+
+            <form method="POST" action="@">
+                @csrf
+
+            <div class="login-form">
+                <div class="subtitle">Kayıt Ol</div>
+                <input type="text" id="ad_soyad" name="name" placeholder="Ad-Soyad" required />
+              
+                <input type="email" id="email" name="email" placeholder="E-Mail" required />
+                <input type="password" id="password" name="password" placeholder="Şifre" required />
+
+            </div>
+
+
+            <footer>
+
+                <div class="right form-actions">
+                    <button class="btn_kyt" type="submit">Kayıt Ol </button>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    </form>
+
+
+
+    <script src="@"></script>
+    
+        try {
+            Typekit.load();
+        } catch (e) {}
+    </script>
+</body>
+
+</html>
